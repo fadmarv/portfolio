@@ -1,0 +1,95 @@
+body,* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+main .div1{
+    width: 62vw;
+    height: 50vh;
+    background: none;
+    position: absolute;
+    top: 7vw;
+    left: 37vw;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
+    color: gold;
+}
+main .image {
+    width: 25vw;
+    height: 49vh;
+    position: absolute;
+    top: 7vw;
+    left: 10vw;
+    background: url(img/programmer.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    animation: 2s profile;  
+    animation-timing-function: ease-in-out;
+}
+@keyframes profile {
+    0% {
+        opacity: 0;
+        transform: translateX(-170px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+        animation-play-state: paused;
+    }
+}
+@media (max-width: 912px) {
+    main .image {
+        width: 45vw;
+        height: 30vh;
+    }
+    main .div1 {
+        width: 80vw;
+        position: absolute;
+        top: 240px;
+        font-size: 55px;
+        left: 10vw;
+    }
+}
+@media (max-width : 900px) {
+     main .div1 {
+        position: absolute;
+        top: 30vw;
+        left: 5vw;
+        width: 90vw;
+        font-size: 55px;
+    }
+    main .image {
+        width: 50vw;
+        height: 35vh;
+    }
+}
+@media (max-width: 540px) {
+    main .div1 {
+        position: absolute;
+        top: 200px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 500px) {
+    main .div1 {
+        width: 80vw;
+        position: absolute;
+        top: 45vw;
+        left: 0;
+        width: 100vw;
+        font-size: 30px;
+    }
+       main .image {
+        width: 55vw;
+        height: 30vh;
+        position: absolute;
+        top: 7vw;
+        left: 10vw;
+        display: block;
+    }
+}

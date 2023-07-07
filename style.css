@@ -2,6 +2,7 @@ body,* {
     margin: 0;
     padding: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 
 main .div1{
@@ -42,6 +43,47 @@ main .image {
         animation-play-state: paused;
     }
 }
+
+.div2 {
+    width: 100vw;
+    height: 50vh;
+    background: none;
+    position: absolute;
+    top: 100vh;
+    color: black;
+    font-family: 'Kalam', cursive;
+}
+.div2 p {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    animation: 1.5s bounce infinite;
+    animation-timing-function: ease-in-out;
+    color: gold;
+}
+@keyframes bounce {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.div2 .contentindiv2 {
+    width: 100vw;
+    height: 33vh;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 @media (max-width: 912px) {
     main .image {
         width: 45vw;
@@ -53,6 +95,10 @@ main .image {
         top: 240px;
         font-size: 55px;
         left: 10vw;
+    }
+    .div2 {
+        position: absolute;
+        top: 70vh;
     }
 }
 @media (max-width : 900px) {
@@ -67,15 +113,45 @@ main .image {
         width: 50vw;
         height: 35vh;
     }
+    .div2 {
+        position: absolute;
+        top: 70vh;
+    }
 }
+@media (max-width : 717px) {
+    main .div1 {
+       position: absolute;
+       top: 40vw;
+       left: 5vw;
+       width: 90vw;
+       font-size: 45px;
+   }
+   main .image {
+       width: 45vw;
+       height: 55vh;
+   }
+   .div2 {
+       position: absolute;
+       top: 100vh;
+   }
+}
+
 @media (max-width: 540px) {
     main .div1 {
         position: absolute;
         top: 200px;
         font-size: 30px;
     }
+    main .image {
+        width: 45vw;
+        height: 35vh;
+    }
 }
 @media (max-width: 500px) {
+    body,* {
+        margin: 0;
+        padding: 0;
+    }
     main .div1 {
         width: 80vw;
         position: absolute;
@@ -91,5 +167,9 @@ main .image {
         top: 7vw;
         left: 10vw;
         display: block;
+    }
+    .div2 {
+        position: absolute;
+        top: 70vh;
     }
 }

@@ -60,7 +60,9 @@ main .image {
     animation: 1.5s bounce infinite;
     animation-timing-function: ease-in-out;
     color: gold;
+    background: none;
 }
+
 @keyframes bounce {
     0% {
         opacity: 1;
@@ -82,6 +84,96 @@ main .image {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.div3 {
+    width: 100vw;
+    height: 80vh;
+    background: none;
+    position: absolute;
+    top: 160vh;
+    color: black;
+    font-family: 'Kalam', cursive;
+}
+.div3 p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    animation: 1.5s bounce2 infinite;
+    animation-timing-function: ease-in-out;
+    color: gold;
+    background: none;
+}
+@keyframes bounce2 {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.div3 .contentindiv3{
+    width: 100vw;
+    height: 70vh;
+    background: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* overflow: none; */
+}
+.contentindiv3 .firstImage {
+    position: relative;
+    background-size: cover;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.firstImage .overlay1 {
+    position: absolute;
+    bottom: 0px;
+    transition: 1s;
+    animation-timing-function: ease-in-out;
+}
+.firstImage .overlay1 {
+    width: 100vw;
+    height: 0vw;
+    text-align: center;
+    padding-top: 40px;
+}
+.firstImage:hover {
+    .overlay1 {
+        width: 30vw;
+        height: 20vh;
+        background-color: teal;
+        opacity: 1;
+    }
+}
+.firstImage a {
+    margin-top: 30px;
+    background: none;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    opacity: 1;
+    text-decoration: none;
+    animation-timing-function: ease-in-out;
+    transition: 0.5s;
+}
+.firstImage a:hover {
+    color: maroon;
+    font-size: 18px;
+}
+.overlay1 strong {
+    background: none;
+    font-size: 25px;
 }
 
 @media (max-width: 912px) {
@@ -118,7 +210,11 @@ main .image {
         top: 70vh;
     }
 }
-@media (max-width : 717px) {
+@media (max-width : 653px) {
+    body,*{
+        padding: 0;
+        margin: 0;
+    }
     main .div1 {
        position: absolute;
        top: 40vw;
@@ -127,7 +223,7 @@ main .image {
        font-size: 45px;
    }
    main .image {
-       width: 45vw;
+       width: 30vw;
        height: 55vh;
    }
    .div2 {
